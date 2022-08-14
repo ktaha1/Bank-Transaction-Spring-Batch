@@ -8,6 +8,7 @@ import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
@@ -18,7 +19,7 @@ public class BatchConfig {
     @Autowired private ItemReader<Transaction> itemReader;
     @Autowired private ItemProcessor<Transaction, Transaction> itemProcessor;
     @Autowired private ItemWriter<Transaction> itemWriter;
-    
+
 
 
 }
